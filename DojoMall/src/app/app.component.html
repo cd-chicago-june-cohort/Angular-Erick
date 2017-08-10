@@ -1,0 +1,22 @@
+<div id="wrapper">
+  <h1>{{title}}</h1>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td>Email</td>
+        <td>Importance</td>
+        <td>Subject</td>
+        <td>Content</td>
+      </tr>
+    </thead>
+    <tbody class="hover">
+      <tr *ngFor='let email of emailArray'>
+        <td>{{email.email}}</td>
+        <td *ngIf='email.importance'><p>High</p></td>
+        <td *ngIf='!email.importance'><p>Low</p></td>
+        <td>{{email.subject}}</td>
+        <td>{{email.content}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
