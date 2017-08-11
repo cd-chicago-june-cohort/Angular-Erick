@@ -1,0 +1,27 @@
+#wrapper{
+    width: 970px;
+    margin: auto;
+    text-align: center;   
+}
+.switchContainer{
+    display: inline-block;
+    height: 65px;
+    width: 80px;
+    border: 1px solid black;
+    vertical-align: top;
+    padding-top: 10px;
+    background-color: #783F15;
+}
+button{
+    height: 55px;
+    width: 55px;
+    border: 1px solid black;
+    background-color: #CF282E;
+    color: white;
+    font-size: 18px;
+}
+.switchOn{
+    background-color: #079E34;
+    color: white;
+}
+

@@ -1,0 +1,7 @@
+<div id="wrapper">
+  <h1>Switchboard</h1>
+  <div *ngFor="let one of position; let idx = index" class="switchContainer">
+    <button (click)='logSwitch(idx)' [ngClass]='{switchOn:bool[idx]}'>{{one}}</button>
+  </div>
+</div>
+
