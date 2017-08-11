@@ -1,0 +1,22 @@
+<div id="wrapper">
+  <h1>US Time Zone Display</h1>
+  <div class="timeContainer">
+    <button (click)="setZone('PST')" [ngClass]="{'zone': boolPST}">PST</button>    
+  </div>
+  <div class="timeContainer">
+    <button (click)="setZone('MST')" [ngClass]="{'zone': boolMST}">MST</button>
+  </div>
+  <div class="timeContainer">
+    <button (click)="setZone('CST')" [ngClass]="{'zone': boolCST}">CST</button>
+  </div>
+  <div class="timeContainer">
+    <button (click)="setZone('EST')" [ngClass]="{'zone': boolEST}">EST</button>
+  </div>
+  <div class="timeContainer">
+    <button (click)="clear()" >Clear</button>
+  </div>
+  <div [ngClass]="{ 'hide': hide }">
+    <h1>{{time | date:'medium'}}</h1>
+  </div>
+</div>
+

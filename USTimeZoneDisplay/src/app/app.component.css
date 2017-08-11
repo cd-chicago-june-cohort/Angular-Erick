@@ -1,0 +1,21 @@
+#wrapper{
+    width: 970px;
+    text-align: center;
+    margin: auto;
+}
+.timeContainer{
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    padding-top: 40px;
+}
+button{
+    width: 75px;
+    height: 50px;
+}
+.zone {
+    background: yellow;
+}
+.hide{
+    display: none;
+}
