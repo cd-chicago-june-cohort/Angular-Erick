@@ -1,0 +1,22 @@
+#wrapper{
+    width: 970px;
+    padding: 20px;
+    margin: auto;
+}
+#register{
+    width: 500px;
+    margin: auto;
+}
+#reg{
+    text-align: center;
+}
+form{
+    border: 2px solid black;
+    padding: 20px;
+}
+#thankYou{
+    border: 1px solid black;
+    color: green;
+    padding: 20px;
+    margin-bottom: 20px;
+}
