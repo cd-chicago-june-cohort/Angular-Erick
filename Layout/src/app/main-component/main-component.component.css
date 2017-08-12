@@ -1,0 +1,9 @@
+#main{
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #9FC6F3;
+    display: inline-block;
+    margin-left: 25px;
+}
