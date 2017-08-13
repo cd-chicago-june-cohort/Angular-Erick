@@ -1,0 +1,26 @@
+<div id="wrapper">
+  <form (submit)="calcPower()">
+    <h3>Initial Power Level: </h3>
+    <div class="numbers">
+      <select class="selectpicker" name="powerLevel" [(ngModel)]="powerLevel">
+        <option *ngFor="let num of numbers" value="{{num}}">{{num}}</option>
+      </select>
+    </div>
+    <div id="calculate">
+      <input type="submit" value="Calculate Power">
+    </div>
+    <div id="saiyan">
+      <img src="https://static.giantbomb.com/uploads/original/0/31/11738-ssj_goku.jpg" alt="saiyan">
+    </div>
+</form>
+  <div id="HSSS">
+    <app-human [human]="human"></app-human>
+    <app-saiyan [saiyan]="saiyan"></app-saiyan>
+    <app-super-saiyan [superSaiyan]="superSaiyan"></app-super-saiyan>
+  </div>
+  <div id="SSSS">
+    <app-super-saiyan-two [superSaiyanTwo]="superSaiyanTwo"></app-super-saiyan-two>
+    <app-super-saiyan-three [superSaiyanThree]="superSaiyanThree"></app-super-saiyan-three>
+    <app-super-saiyan-four [superSaiyanFour]="superSaiyanFour"></app-super-saiyan-four>
+  </div>
+</div>

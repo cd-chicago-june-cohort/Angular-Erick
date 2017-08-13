@@ -1,0 +1,45 @@
+#wrapper{
+    width: 970px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+h3{
+    display: inline-block;
+}
+.numbers{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+select{
+    height: 30px;
+    width: 100px
+}
+#calculate{
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+#saiyan{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 115px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+#HSSS{
+    margin-top: 20px;
+    height: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#SSSS{
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

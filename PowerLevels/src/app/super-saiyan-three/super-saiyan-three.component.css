@@ -1,0 +1,12 @@
+#superSaiyanThree{
+    display: inline-block;
+    width: 280px;
+    height: 150px;
+    border: 1px solid black;
+    margin-right: 15px;
+    vertical-align: top;
+    padding: 20px;
+}
+p{
+    font-size: 12px;
+}
