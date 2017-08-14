@@ -1,0 +1,33 @@
+<div id="formContainer">
+  <form #subForm="ngForm" (submit)="addQuote()" class="form">
+    <h1>Add a Quote</h1>
+    <div id="textareaContainer">
+      <div id="textarea">
+        <textarea class="form-control" name="quote"
+          required
+          minlength="4" 
+          [(ngModel)]="quoteObj.quote"
+          #quote = "ngModel"
+        ></textarea>
+      </div>
+      <div id="errors">
+        <p *ngIf="quote.errors">
+          <span *ngIf="quote.errors.required">Quote is required.</span>
+          <span *ngIf="quote.errors.minlength">Quote length must be at least 4 characters long.</span>
+        </p>
+        <p *ngIf="author.errors">Author is required.</p>
+      </div>
+    </div>
+    <div id="author">
+      <label>Author: </label>
+      <input name="author" type="text"
+        required
+        minlength="1" 
+        [(ngModel)]="quoteObj.author"
+        #author = "ngModel"
+      ><br>
+      <input [disabled]="!subForm.valid" id="submit" type="submit" value="Add Quote">
+    </div>
+  </form>
+  <app-quote [quotes]="quotes" (voteUP)="voteUp($event)" (voteDOWN)="voteDown($event)" (DELETE)="deleteQuote($event)"></app-quote>
+</div>

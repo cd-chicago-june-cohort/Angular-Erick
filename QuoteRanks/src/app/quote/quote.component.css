@@ -1,0 +1,37 @@
+#wrapper{
+    width: 970px;
+    height: 160px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+}
+#quote{
+    display: inline-block;
+    width: 700px;
+    height: 100px;
+    vertical-align: top;
+}
+#options{
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+}
+button{
+    margin-bottom: 10px;
+    width: 200px;
+}
+#voteUp{
+    background-color: #B5D6AD;
+}
+#voteDown{
+    background-color: #EA989A;
+}
+#delete{
+    background-color: #333333;
+    color: white;
+}
+#counter{
+    float: right;
+    margin-right: 50px;
+    margin-top: 45px;
+}

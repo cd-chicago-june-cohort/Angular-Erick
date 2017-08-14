@@ -1,0 +1,36 @@
+#formContainer{
+    width: 970px;
+    margin: auto;
+    margin-top: 20px;
+}
+textarea{
+    width: 700px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+#author{
+    padding-left: 400px;
+}
+input{
+    display: inline-block;
+    width: 150px;
+}
+label{
+    margin-left: 90px;
+}
+#submit{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#textarea{
+    display: inline-block;
+}
+#errors{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 100px;
+    color: red;
+    margin-left: 10px;
+    padding-top: 10px;
+}
