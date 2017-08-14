@@ -1,0 +1,22 @@
+#wrapper{
+    width: 970px;
+    margin: auto;
+    height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+#submit{
+    width: 254px;
+    margin-top: 20px;
+}
+#form{
+    display: inline-block;
+}
+#score{
+    display: inline-block;
+    vertical-align: top;
+    width: 650px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+}

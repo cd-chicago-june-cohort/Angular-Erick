@@ -1,0 +1,22 @@
+<div id="wrapper">
+    <div id="form">
+        <form (submit)="onSubmit()">
+            <h1>GitHub Score</h1>
+            <label>Github Username: </label>
+            <input type="text" name="username"
+                required
+                minlength="2"
+                [(ngModel)]="username"
+            ><br>
+            <input id="submit" type="submit" value="Calculate my Github Score">
+        </form>
+    </div>
+    <div id="score">
+        <h1>Your Score: {{tasks.public_repos + tasks.followers}}{{tasks}}</h1>
+        <h1 style="color:red;" *ngIf="(tasks.public_repos + tasks.followers) < 20">Needs Work!</h1>
+        <h1 style="color:orange;" *ngIf="(tasks.public_repos + tasks.followers) > 20 && (tasks.public_repos + tasks.followers) < 50">A Decent Start!</h1>
+        <h1 style="color:black;" *ngIf="(tasks.public_repos + tasks.followers) > 50 && (tasks.public_repos + tasks.followers) < 100">Doing Good!</h1>
+        <h1 style="color:green;" *ngIf="(tasks.public_repos + tasks.followers) > 100 && (tasks.public_repos + tasks.followers) < 200">Great Job!</h1>
+        <h1 style="color:blue;" *ngIf="(tasks.public_repos + tasks.followers) >= 200">Github Elite!</h1>
+    </div>
+</div>
