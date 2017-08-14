@@ -1,0 +1,12 @@
+<div id="wrapper">
+  <button (click)="getWisdom()">I need wisdom</button>
+  <h1>{{randomQuote}}</h1>
+  <form (submit)="searchWisdom()">
+    <input type="text" name="wisdom"
+      required
+      [(ngModel)]="wisdom">
+    <button>Search Swanson Wisdom</button>
+  </form>
+  <p *ngFor="let quote of results">{{quote}}</p>
+</div>
+
