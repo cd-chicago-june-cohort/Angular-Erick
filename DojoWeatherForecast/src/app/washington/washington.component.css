@@ -1,0 +1,14 @@
+#city{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+}
+#image{
+    display: inline-block;
+    vertical-align: top;
+}
+img{
+    height: 200px;
+    width: 300px;
+}

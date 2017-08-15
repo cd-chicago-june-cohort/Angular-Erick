@@ -1,0 +1,13 @@
+#wrapper{
+    width: 970px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+li{
+    display: inline-block;
+}
+#locationContainer{
+    border: 1px solid black;
+    padding: 20px;
+}
